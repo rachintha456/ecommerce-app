@@ -1,0 +1,26 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5px;
+  background: url("https://img.freepik.com/free-vector/navy-blue-geometrical-patterned-mobile-wallpaper-vector_53876-167963.jpg?w=360&t=st=1699079413~exp=1699080013~hmac=f229ce037ab27b630ffe0e3ddadeab3622244dceb87c0c1ff91d6c9fc227842a");
+  background-size:cover;
+}
+ion-item:first-child{
+  margin-bottom: 10px;
+}
+
+.login-button{
+  margin: 30px 0 15px 0;
+}
+
+ion-item{
+  border-radius: 4px;
+  opacity: 0.8;
+  background: transparent;
+}
+.input{
+  background: transparent;
+}
