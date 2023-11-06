@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" color="light" routerLink="/products">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>+ New Products</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <div class="container">
+    <br>
+    <br>
+    <input type="file" (change)="selectFile($event)">
+    <br>
+    <input type="text" placeholder="Product Name" [(ngModel)]="productName">
+    <br>
+    <input type="number" placeholder="Product Price" [(ngModel)]="productCost">
+    <br>
+    <input type="text" placeholder="Product Description" [(ngModel)]="productDescription">
+    <br>
+      <ion-button size="default" fill="solid" (click)="upload()">Upload Product</ion-button>
+  </div>
+
+</ion-content>
