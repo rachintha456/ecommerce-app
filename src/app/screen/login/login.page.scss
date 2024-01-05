@@ -1,26 +1,19 @@
 .container{
   width: 100vw;
-  height: 100vh;
+  height:100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 5px;
-  background: url("https://img.freepik.com/free-vector/navy-blue-geometrical-patterned-mobile-wallpaper-vector_53876-167963.jpg?w=360&t=st=1699079413~exp=1699080013~hmac=f229ce037ab27b630ffe0e3ddadeab3622244dceb87c0c1ff91d6c9fc227842a");
-  background-size:cover;
+  padding: 0 10px;
+  background: url("https://img.freepik.com/free-photo/laptop-shopping-bags-online-shopping-concept_1423-190.jpg?w=740&t=st=1704468002~exp=1704468602~hmac=834aaa30cb36436a1696a9281c8f9580152643dfac2cd48c8c43ccab2e452ddb")no-repeat;
+  background-size: cover;
 }
 ion-item:first-child{
   margin-bottom: 10px;
 }
-
+ion-item{
+  --background: transparent;
+}
 .login-button{
   margin: 30px 0 15px 0;
-}
-
-ion-item{
-  border-radius: 4px;
-  opacity: 0.8;
-  background: transparent;
-}
-.input{
-  background: transparent;
 }

@@ -3,6 +3,12 @@
     <ion-button slot="start" color="light" routerLink="/dashboard">
       <ion-icon name="arrow-back-outline"></ion-icon>
     </ion-button>
+    <div class="cart">
+      <ion-button slot="start" color="light" routerLink="/cart">
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </div>
+
     <ion-title>products</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -18,16 +24,19 @@
   </div>
 
 <!--  reuse-->
-  <ion-card *ngFor="let temProd of products">
+  <ion-card *ngFor="let temProd of products"  >
     <img alt="Silhouette of mountains" src="{{temProd?.url}}" />
     <ion-card-header>
       <ion-card-title>{{temProd?.name}}</ion-card-title>
-      <ion-card-subtitle>{{temProd?.price}}</ion-card-subtitle>
+      <ion-card-subtitle>LKR{{temProd?.price}}</ion-card-subtitle>
     </ion-card-header>
 
     <ion-card-content>
       {{temProd?.description}}
     </ion-card-content>
+
+    <ion-button fill="clear">Add to cart</ion-button>
+    <ion-button fill="clear">Buy now</ion-button>
   </ion-card>
 
 </ion-content>

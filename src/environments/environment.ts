@@ -4,14 +4,15 @@
 
 export const environment = {
   production: false,
-    firebaseConfig : {
-    apiKey: "AIzaSyADMcZ-V3V5SF_PgPkwpUxtuxfxXaUhmRE",
-    authDomain: "ionic-app-856f1.firebaseapp.com",
-    projectId: "ionic-app-856f1",
-    storageBucket: "ionic-app-856f1.appspot.com",
-    messagingSenderId: "1044997133699",
-    appId: "1:1044997133699:web:527f5672fee18b80f052b6",
-    measurementId: "G-1QN7QHFN1X"
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  firebaseConfig : {
+    apiKey: "AIzaSyAUHZfAbII9uJ_rLu7KtGJ9L5Xc0t1DM8U",
+    authDomain: "ecommerce-app-cd89b.firebaseapp.com",
+    projectId: "ecommerce-app-cd89b",
+    storageBucket: "ecommerce-app-cd89b.appspot.com",
+    messagingSenderId: "972738758553",
+    appId: "1:972738758553:web:cb81852f70766a0cc77508",
+    measurementId: "G-3JVLLKW0V4"
   }
 };
 

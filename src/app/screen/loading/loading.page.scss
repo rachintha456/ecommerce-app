@@ -1,10 +1,11 @@
+
 .container{
   width: 100vw;
-  height: 100vh;
+  height:100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("https://img.freepik.com/free-vector/abstract-blur-pink-blue-gradient-background-design_53876-169254.jpg?w=360&t=st=1699036513~exp=1699037113~hmac=5cc212cd0603e15dcf25f0b09581b96d7328edeeef2ad1aa2a684907eb10fcd2")no-repeat;
-  background-size:cover;
+  background: url("https://img.freepik.com/free-photo/graphic-2d-colorful-wallpaper-with-grainy-gradients_23-2151001630.jpg?t=st=1704218252~exp=1704221852~hmac=11229400bf81ccd86cefd1af94ddff46dbc0643c08be0230c140f7edde9dc547&w=360")no-repeat;
+  background-size: cover;
   flex-direction: column;
 }

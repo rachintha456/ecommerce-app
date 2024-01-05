@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {AngularFireAuth} from "@angular/fire/compat/auth";
-import {UserService} from "../../services/user.service";
-import {error} from "@angular/compiler-cli/src/transformers/util";
-import {Router} from "@angular/router";
+import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
+
 
 @Component({
   selector: 'app-register',
@@ -11,21 +10,23 @@ import {Router} from "@angular/router";
 })
 export class RegisterPage implements OnInit {
 
-  email='';
-  fullname='';
-  password='';
+
+  email!:string;
+  fullName!:string;
+  password!:string;
+  contact!:string
 
   constructor(private userService:UserService, private router:Router) { }
 
   ngOnInit() {
   }
 
+
   create(){
-    if(this.email && this.fullname && this.password){
+    if(this.email && this.password && this.fullName && this.contact){
       this.userService.register(this.email, this.password).then(registerData=>{
-        this.userService.createUser(this.email,this.fullname).then(userData=>{
+        this.userService.createUser(this.email,this.fullName,this.contact).then(userData=>{
           this.router.navigateByUrl('/dashboard');
-          console.log(userData);
         }).catch(error=>{
           console.log(error);
         });

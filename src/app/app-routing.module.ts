@@ -38,6 +38,14 @@ const routes: Routes = [
   {
     path: 'new-product',
     loadChildren: () => import('./screen/new-product/new-product.module').then( m => m.NewProductPageModule)
+  },
+  {
+    path: 'payments',
+    loadChildren: () => import('./screen/payments/payments.module').then( m => m.PaymentsPageModule)
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./screen/cart/cart.module').then( m => m.CartPageModule)
   }
 ];
 

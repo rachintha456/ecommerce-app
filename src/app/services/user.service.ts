@@ -20,10 +20,11 @@ export class UserService {
       email,password
     )
   }
-  createUser(email:string, name:string):Promise<any>{
+  createUser(email:string, name:string, contact:string):Promise<any>{
     return this.firestore.collection('users').add({
       email:email,
-      name:name
+      name:name,
+      contact:contact
     });
   }
 

@@ -1,26 +1,17 @@
 .container{
   width: 100vw;
-  height: 100vh;
+  height:100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 5px;
-  background: url("https://img.freepik.com/premium-photo/abstract-geometric-connecting-dots-as-plexus-blue-purple-background-data-cyberspace-concept_494516-1437.jpg?w=360");
-  background-size:cover;
-}
-ion-item:first-child, ion-item:nth-child(2){
-  margin-bottom: 10px;
-}
-
-.login-button{
-  margin: 30px 0 15px 0;
+  padding: 0 10px;
+  background: url("https://img.freepik.com/free-photo/shopping-cart-with-bag_23-2148879373.jpg?w=740&t=st=1704469447~exp=1704470047~hmac=6ebc185852f81ae48b0e9bd4f4cb13867b4efae7ccebffd798105cad4fd19e1d")no-repeat;
+  background-size: cover;
 }
 
 ion-item{
-  border-radius: 4px;
-  opacity: 0.8;
-  background: transparent;
+  --background: transparent;
 }
-.input{
-  background: transparent;
+.register-button{
+  margin: 30px 0 15px 0;
 }
